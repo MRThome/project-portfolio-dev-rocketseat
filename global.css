@@ -1,0 +1,94 @@
+@import url(intro.css);
+@import url(projects.css);
+@import url(services.css);
+@import url(contact.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--color-gray-200);
+}
+
+:root {
+    /* Colors */
+    /* Principal */
+    --color-red: #E3646E;
+    --color-purple: #BB72E9;
+    --color-blue: #3996DB;
+    --color-green: #82BC4F;
+    --color-yellow: #EABD5F;
+
+    /* Base */
+    --color-gray-100: #0D0E11;
+    --color-gray-200: #16181D;
+    --color-gray-300: #292C34;
+    --color-gray-400: #878EA1;
+    --color-gray-500: #C0C4CE;
+    --color-gray-600: #E2E4E9;
+
+    /* Tipography */
+    --font-family-asap: 'Asap', sans-serif;
+    --font-family-inconsolata: 'Inconsolata', monospace;
+    --font-family-maven-pro: 'Maven Pro', sans-serif;
+    
+    --title-lg: 700 56px/120% var(--font-family-asap);
+    --title-md: 700 24px/120% var(--font-family-asap);
+    --title-sm: 700 16px/120% var(--font-family-asap);
+
+    --subtitle: 400 20px/120% var(--font-family-inconsolata);
+
+    --text-md: 400 16px/140% var(--font-family-maven-pro);
+    --text-sm: 400 14px/140% var(--font-family-maven-pro);
+}
+
+
+.project-card {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 330px;
+    height: 280px;
+
+    /* Base/gray-300 */
+    background: #292C34;
+    border-radius: 12px;
+}
+
+.project-card:hover {
+    border: 1.5px solid var(--color-gray-400);
+
+}
+
+.social-button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+
+    width: 400px;
+    height: 68px;
+
+    /* Base/gray-300 */
+    color: var(--color-gray-500);
+    border-radius: 8px;
+    border: none;
+    
+    background-color: var(--color-gray-300);
+}
+
+.social-button:hover {
+    border: 1.5px solid var(--color-blue);
+}
+
+.social-button * {
+    background-color: inherit;
+}

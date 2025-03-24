@@ -1,0 +1,50 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 787px;
+    background-image: url(./assets/Background_Contacts.png);
+    background-size: 100% 100%;
+
+    padding: 128px 120px 200px;
+}
+
+header {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 48px;
+}
+
+#contact .subtitle {
+    color: var(--color-purple);
+    font: var(--subtitle);
+}
+
+#contact .title-md {
+    color: var(--color-gray-600);
+    font: var(--title-md);
+}
+
+#contact .text-md {
+    color: var(--color-gray-500);
+    font: var(--text-md);
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    border-radius: 8px;
+
+    height: 320px;
+    width: 400px;
+}
+
+.social-button p {
+    flex-grow: 1;
+    text-align: left;
+}
